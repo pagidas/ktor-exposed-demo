@@ -14,10 +14,6 @@ class UserRepositoryImpl: UserRepository {
             .singleOrNull()
     }
 
-    override suspend fun getUserByName(name: String): User? {
-        TODO("Implement me!")
-    }
-
     override suspend fun insertUser(user: User): User {
         var userId = 0
         queryDb {
